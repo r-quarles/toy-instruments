@@ -4,6 +4,8 @@
 ## Introduction
 These files work together alongside hardware to sonify a toy car racetrack. Sensors can be placed anywhere on a track to create a trigger-spot, and can be customized to any room with a seperate callibration code. By capitializing on nostalgia and intrigue, this setup entices guests to interact and play the instrument together. 
 
+![toyInstruments_pic1](https://github.com/r-quarles/toy-instruments/assets/169728021/8762b6e2-c1f5-40ee-86a0-5fbbee8d1c0a)
+
 The system consists of four parts, three input buttons and a center "brain" where the sensors communicate with the microprocessor. For this project I chose to use an Arduino Nano for it's size and accessibility, and was able to perfectly max out all 8 analog and 11 digital pins. The arduino takes in each sensor's data, and sends a unique serial message to Processing each time a car passes over depending on the current "mode" of the system. Processing takes this serial message, splits it, and sends the data as OSC to Supercollider where it triggers a note with the specified parameters. 
 
 ### Modes: <br>
@@ -28,12 +30,25 @@ My synth in Supercollider uses a drone and synth I created last year. The drone 
 
 ### Hardware
 
+![toyInstruments_diagram](https://github.com/r-quarles/toy-instruments/assets/169728021/0394224e-1bf0-4f58-9dee-c8a19df536a3)
+
 The hardware of this project is no doubt the focus. It is the tacticle items that the users come in direct contact with. To make these as useful as possible, I made the buttons modular to the "brain" so they can be attached with a patch cable. This lets the buttons be placed anywhere on the display table, so they can be spread out for many people. This meant they needed to supply their own power, which must be between 3 and 5V to be compatible with the NANO. I used two AA batteries to supply the 3V needed to the digital pins that the button-in jacks connect to. These were also able to power the lights in the arcade buttons I sourced, adding to the design of the system. 
+
+![toyInstruments_pic4](https://github.com/r-quarles/toy-instruments/assets/169728021/6009479d-9793-4604-9c41-cdad9e70e705)
 
 The actual soldering if the circuit gave me much grief, with broken tracks disconnecting some of it. This was able to be remedied by some solder-bridges between the break, saving my circuitboard. Because I had maxed out the pins on the board, I had a lot of components that needed to fit in a very small space on my circuit board. I did have a max size for the board, as the I needed the box to stay reasonabley sized for transport and needed to minimize the amount of radio frequency that could interact with my microprocessor. Through a lot of careful planning, I was able to fit everything I needed onto one protoboard. This I feel is one of the greatest accomplishments of this project, as my planning and design of my hardware has grown through my years of practice at Columbia. Though I did run into some bumps, the resulting work is clean and has few overlaps showing good signal-flow. 
 
+![toyInstruments_pic3](https://github.com/r-quarles/toy-instruments/assets/169728021/19299676-fcab-4b5e-ac60-16d939bfb9e3)
+
 The resulting enclosures would be my second favorite feature of the project. I spent much time perfecting the pattern on them and sealing it, as the final aesthetic of my project felt just as important as it's sound design. The colorful design feels playful, and intrigued many passerby as I was working on it. The buttons and "brain" were clearly defined for users as what they can press and should not, as the final "brain" enclosure lacked much of the interface the buttons had. This combined with it's closed-box design meant it could be plugged into a computer and left alone without worry of cords becoming loose or reset switches being pressed. I ran into a few issues when mounting the USB-C recepticle, as my data-cable was shorter than the enclosure walls. Thankfully, I was able to find an adapter that bridged the gap the morning of Manifest (whew). 
+
+![toyInstruments_pic2](https://github.com/r-quarles/toy-instruments/assets/169728021/e707c5ab-ef9c-420e-b13b-a5eab1990f94)
 
 ## Conclusions
 
 This project has been the largest one I have ever worked on, and has been increadibly rewarding. The system I have now is able to be expanded upon in a million ways, by adding new modes, sounds, and interactions between the lights and sensors. If I were to continue this project, I would want to add more button-modes and add a visual output from Processing. This Processing screen could be projected, increasing the whimsy around the project. I have learned so much about the process of design through this project, and how to work with my own creative-style to make things that I am proud to showcase. Though it was not the most straight-forward journey, I eventually was able to make a very compelling project that many were able to enjoy. 
+
+(demo video in main folder)
+
+![toyInstruments_pic5](https://github.com/r-quarles/toy-instruments/assets/169728021/a375d49c-0c3f-47bb-9cf6-6e6d09071f35)
+
