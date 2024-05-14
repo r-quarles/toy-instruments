@@ -48,7 +48,6 @@ The resulting enclosures would be my second favorite feature of the project. I s
 
 This project has been the largest one I have ever worked on, and has been increadibly rewarding. The system I have now is able to be expanded upon in a million ways, by adding new modes, sounds, and interactions between the lights and sensors. If I were to continue this project, I would want to add more button-modes and add a visual output from Processing. This Processing screen could be projected, increasing the whimsy around the project. I have learned so much about the process of design through this project, and how to work with my own creative-style to make things that I am proud to showcase. Though it was not the most straight-forward journey, I eventually was able to make a very compelling project that many were able to enjoy. 
 
-(demo video in main folder)
-
 ![toyInstruments_pic5](https://github.com/r-quarles/toy-instruments/assets/169728021/a375d49c-0c3f-47bb-9cf6-6e6d09071f35)
 
+[![DEMO VIDEO](https://img.youtube.com/vi/mZiDHAVxI1g/0.jpg)](https://www.youtube.com/watch?v=mZiDHAVxI1g)
